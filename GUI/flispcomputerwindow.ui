@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlispComputerWindow</class>
+ <widget class="QMainWindow" name="FlispComputerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1480</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background-color: #121212;
+}</string>
+   </property>
+   <widget class="RegistryGroupWidget" name="registryGroup" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>330</width>
+      <height>450</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="IOGroupWidget" name="IOGroup" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>941</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startBtn">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>80</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: #FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetBtn">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>180</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: #FFFFFF;
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="MemoryWidget" name="memoryGroup" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>400</y>
+      <width>470</width>
+      <height>420</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProgramWidget" name="programGroup" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>20</y>
+      <width>340</width>
+      <height>360</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1480</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RegistryGroupWidget</class>
+   <extends>QWidget</extends>
+   <header>registrygroupwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IOGroupWidget</class>
+   <extends>QWidget</extends>
+   <header>iogroupwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MemoryWidget</class>
+   <extends>QWidget</extends>
+   <header>memorywidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProgramWidget</class>
+   <extends>QWidget</extends>
+   <header>programwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

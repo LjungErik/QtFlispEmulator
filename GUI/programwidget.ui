@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProgramWidget</class>
+ <widget class="QWidget" name="ProgramWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #121212;
+}
+QGroupBox {	
+    font: 75 16pt &quot;Century Gothic&quot;;
+	color: #d9d9d9;
+}
+QLabel {
+	font: 75 24pt &quot;Century Gothic&quot;;
+	color: #d9d9d9;
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>270</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Program</string>
+   </property>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>250</width>
+      <height>295</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+	color: #FFFFFF;
+}</string>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
